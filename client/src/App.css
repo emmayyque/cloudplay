@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+
+@theme {
+  /* Theme Colors */
+  --color-primary-100: #f5f1f8;
+  --color-primary-500: #705cef;
+
+  --color-secondary-500: #696969;
+  
+  /* Animation Here */
+  --animate-dash-loader: dashLoader 3s ease-in-out forwards;
+  --animate-fade-in: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from { transform: translateY(50%); opacity: 0; }
+  to { transform: translateY(0); opacity: 100; }
+}
+
+@keyframes dashLoader {
+  0% { width: 0; }  
+  15% { width: 25%;}
+  35% { width: 35%;}
+  45% { width: 50%;}
+  60% { width: 65%; }  
+  75% { width: 70%; }  
+  85% { width: 85%; }
+  95% { width: 90%; } 
+  100% { width: 100%; }
+}
